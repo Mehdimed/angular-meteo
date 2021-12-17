@@ -13,3 +13,8 @@
         <span>latitude : {{ meteo.coord.lat }}</span>
     </div>
 </div>
+
+<div *ngIf="!meteo" class="no-result-container">
+    <h2 class="no-result">Désolé la ville que vous chercher n'existe pas..</h2>
+    <button (click)="goBack()" class="back">retour</button>
+</div>

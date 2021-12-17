@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MeteoService } from 'src/app/services/meteo.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Meteo } from 'src/app/models/meteo';
 
 @Component({
@@ -14,7 +14,7 @@ export class MeteoInfosComponent implements OnInit {
 
   public meteo?: Meteo;
 
-  constructor(private meteoService: MeteoService, private route: ActivatedRoute) { }
+  constructor(private meteoService: MeteoService, private route: ActivatedRoute, private router: Router) { }
   
   ngOnInit(): void {
     this.route.queryParams.subscribe((params) =>{
@@ -25,6 +25,10 @@ export class MeteoInfosComponent implements OnInit {
       this.meteo = this.meteoService.cleanResponse(resp)
     })
 
+  }
+
+  goBack(){
+    this.router.navigate([''])
   }
 
 }
