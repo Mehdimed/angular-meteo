@@ -23,7 +23,6 @@ export class MeteoInfosComponent implements OnInit {
 
     this.meteoService.meteo(this.ville).subscribe((resp)=>{
       this.meteo = this.meteoService.cleanResponse(resp)
-      console.log(this.meteo)
     })
 
   }

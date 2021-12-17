@@ -1,4 +1,5 @@
 <div class="container">
+    <h1 class="home-message">Quel temps fait-il à...</h1>
     <form action="/meteo" class="row" (ngSubmit)="onSubmit()">
 
         <p-autoComplete [(ngModel)]="villeRecherche" [inputStyleClass]="'search'" [panelStyleClass]="'search-panel'" emptyMessage="Pas de résultats" name="search" [showEmptyMessage]="true" [suggestions]="filteredVilles" (completeMethod)="filterVille($event)" [minLength]="1"></p-autoComplete>

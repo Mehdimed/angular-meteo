@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
         }
     }
 
-    this.filteredVilles = filtered;
+    this.filteredVilles = filtered.sort();
 }
 
 }

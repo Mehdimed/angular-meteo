@@ -1,15 +1,29 @@
 header{
     position: sticky;
-    height: 60px;
     display: flex;
     align-items: center;
     padding-left: 15px;
-    background-image: linear-gradient(rgb(180, 240, 255),rgb(138, 251, 255));
+    background: linear-gradient(to right, #B9EBFF, #B9EBFF 20%, rgb(255, 226, 183) 75%);
+}
+a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: black;
 }
 
 #logo{
     cursor: pointer;
-    width: 60px;
+    width: 50px;
     background-color: rgb(248, 243, 170);
     border-radius: 50%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Roboto&display=swap');
+
+.titre{
+    font-family: Original Surfer;
+    margin-left: 10px;
+    font-size: 3rem;
 }

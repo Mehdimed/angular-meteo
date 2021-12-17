@@ -1,14 +1,15 @@
-<div class="card">
-    <h2 class="title">{{meteo?.ville}} ({{meteo?.pays | paysName }})</h2>
+<!-- a faire créer un composant card -->
+<div  *ngIf="meteo" class="card">
+    <h2 class="title">{{meteo.ville}} ({{meteo.pays | paysName }})</h2>
     <div class="description">
         <div class="col">
-            <img *ngIf="meteo?.icon" src="http://openweathermap.org/img/wn/{{meteo?.icon}}@2x.png" alt="icon">
-            <span>{{meteo?.description}}</span>
+            <img src="http://openweathermap.org/img/wn/{{meteo.icon}}@2x.png" alt="icon">
+            <span>{{meteo.description}}</span>
         </div>
         <div class="temperature">{{ meteo?.temperature }}°c</div>
     </div>
     <div class="row coord">
-        <span>longitude : {{ meteo?.coord?.lon }}</span>
-        <span>latitude : {{ meteo?.coord?.lat }}</span>
+        <span>longitude : {{ meteo.coord.lon }}</span>
+        <span>latitude : {{ meteo.coord.lat }}</span>
     </div>
 </div>
