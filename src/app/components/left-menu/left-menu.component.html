@@ -1,0 +1,8 @@
+<div class="left-menu">
+    <h3>Historique de recherche</h3>
+    <div class="historique">
+        <div class="ville" *ngFor="let ville of historique" (click)="onClick(ville)">
+            {{ ville }}
+        </div>
+    </div>
+</div>

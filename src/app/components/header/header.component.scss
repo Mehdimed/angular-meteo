@@ -1,0 +1,15 @@
+header{
+    position: sticky;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    background-image: linear-gradient(rgb(180, 240, 255),rgb(138, 251, 255));
+}
+
+#logo{
+    cursor: pointer;
+    width: 60px;
+    background-color: rgb(248, 243, 170);
+    border-radius: 50%;
+}

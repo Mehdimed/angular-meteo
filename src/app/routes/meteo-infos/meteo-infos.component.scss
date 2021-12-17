@@ -1,0 +1,39 @@
+.card{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 183, 255);
+    width: 30%;
+    height: max-content;
+
+    .title{
+        text-align: center;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        .col {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        img{
+            width: 50px;
+        }
+    }
+
+    .temperature {
+        font-size: 2rem;
+    }
+
+    .coord{
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-style: italic;
+        margin-top: 50px;
+    }
+}

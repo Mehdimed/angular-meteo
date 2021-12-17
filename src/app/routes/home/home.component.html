@@ -1,0 +1,8 @@
+<div class="container">
+    <form action="/meteo" class="row" (ngSubmit)="onSubmit()">
+
+        <p-autoComplete [(ngModel)]="villeRecherche" [inputStyleClass]="'search'" [panelStyleClass]="'search-panel'" emptyMessage="Pas de résultats" name="search" [showEmptyMessage]="true" [suggestions]="filteredVilles" (completeMethod)="filterVille($event)" [minLength]="1"></p-autoComplete>
+        <button class="btn">Chercher</button>
+        
+    </form>
+</div>

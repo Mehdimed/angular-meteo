@@ -1,0 +1,45 @@
+.left-menu{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(220, 189, 255);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.historique{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .ville{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 40px;
+        margin-top: 10px;
+        cursor: pointer;
+
+        color: #212529;
+        background-color: #f8f9fa;
+        border-color: #f8f9fa;
+
+        
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+        &:hover{
+            color: #212529;
+            background-color: #e2e6ea;
+            border-color: #dae0e5;
+        }
+    }
+}
